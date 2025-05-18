@@ -5,16 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity 5</title>
     <style>
-         body {
-      background-color: #0727b732;
-      font-family: Arial, sans-serif;
-      margin: 20px;}
 
-      .highlight { background-color: rgb(31, 214, 80); }
+/* Sets the background color of the entire page */
 
-      #list { font-size: 24px; font-weight: bold; }
+        body { background-color: #269f8b;}
 
+/* Highlights elements with a yellowish background, padding, rounded corners, and dark text */        
+        .highlight { background-color: #f4f4a6; padding: 10px; border-radius: 6px; color: #333;}
+
+        #list { font-size: 24px; font-weight: bold; }
+
+        h2 { background-color: #0b77dc; text-align: center; font-family: Georgia; margin: 20px; }
+
+        h3 {background-color: #C9DA17; text-align: center; font-family: Georgia;}
+
+        footer {background-color: #1bbcce;font-family: Georgia; text-align: center; padding: 10px; margin-top: 40px;}
+
+        ol {color: #350a6a; font-size: 16px}
+
+        ul {color: #400884; font-size: 16px}
+
+        p {color: #400884; font-size: 16px}
+
+        #dit { font-size: 24px; font-weight: bold; }
+
+        #picture {border-radius: 15px;width: 300px; height: auto}
+
+        #pic {border: 50px solid #BACE1B; width: 300px; height: auto}
+
+        #onepic {box-shadow: 5px 5px 15px grey; width: 300px; height: 350px;"}
     </style>
+
 
 </head>
 <body>
@@ -30,7 +51,7 @@
     </header>
 
     <figure>
-        <img src="istockphoto-amok.jpg" alt="Cambodian Amok" style="box-shadow: 5px 5px 15px grey; width: 300px; height: 350px;">
+        <img id="onepic" src="istockphoto-amok.jpg" alt="Cambodian Amok">
         <figcaption><q>Cambodian Amok</q></figcaption>
     </figure>
 
@@ -43,7 +64,7 @@
                     and tourists also enjoy trying it.</p>
 
             <h2><ins>Cooking Style</ins></h2>
-             <img src="istockphoto-steamedamok.jpg" alt="steamedamok" style="border: 50px solid #BACE1B; width: 300px; height: auto;">
+             <img id="pic" src="istockphoto-steamedamok.jpg" alt="steamedamok">
                     <p>Amok is special in that it is cooked in banana leaves.
                     The fish and curry batter are placed inside the leaves and steamed until thick and creamy. 
                     The banana leaves impart a wonderful aroma to the dish.</p>
@@ -80,7 +101,7 @@
 
         <section>
             <h3 id="list"><ins>Ingredients</ins></h3>
-            <img src="istockphoto-ingredients.jpg" alt="Description" style="border-radius: 15px;width: 300px; height: auto;">
+            <img id="picture" src="istockphoto-ingredients.jpg" alt="Ingredients of AMOK">
             <ul>
                 <li>250g Fish </li>
                 <li>2 sheets banana leaves </li>
@@ -121,7 +142,7 @@
         </section>
 
         <section>
-            <h3>Watch the video how to make Amok:</h3>
+            <h3 class="highlight">Watch the video how to make Amok:</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/mlngdPqXi10?si=BhALkjquWYiBMfKs"
                     title="YouTube video player" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
