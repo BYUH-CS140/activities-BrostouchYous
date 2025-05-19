@@ -1,0 +1,28 @@
+/* Sets the background color of the entire page */
+
+        body { background-color: #269f8b;}
+
+/* Highlights elements with a yellowish background, padding, rounded corners, and dark text */        
+        .highlight { background-color: #f4f4a6; padding: 10px; border-radius: 6px; color: #333;}
+
+        #list { font-size: 24px; font-weight: bold; }
+
+        h2 { background-color: #0b77dc; text-align: center; font-family: Arial, Helvetica, sans-serif; margin: 20px; }
+
+        h3 {background-color: #C9DA17; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+        footer {background-color: #1bbcce;font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 10px; margin-top: 40px;}
+
+        ol {color: #350a6a; font-size: 16px;}
+
+        ul {color: #400884; font-size: 16px;}
+
+        p {color: #400884; font-size: 16px;}
+
+        #dit { font-size: 24px; font-weight: bold; }
+
+        #picture {border-radius: 15px;width: 300px; height: auto;}
+
+        #pic {border: 50px solid #BACE1B; width: 300px; height: auto;}
+
+        #onepic {box-shadow: 5px 5px 15px grey; width: 300px; height: 350px;}
