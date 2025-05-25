@@ -1,0 +1,201 @@
+/* 1. Reset and global box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Base page styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0c81c5d8;
+  color: #222;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* 3. Header banner */
+#page-header {
+  background-image: url("wood.jpg");
+  background-size: cover;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+/* 4. Navigation bar */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.nav-list > li {
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.nav-list a:hover,
+.nav-list > li:hover {
+  color: #333;
+  background: #fff;
+}
+
+/* 5. Main content layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+/* 6. Headings */
+h1, h2, h3 {
+  color: #0b77dc;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  background: #C9DA17;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* 7. Figure and images */
+figure {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#onepic {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px grey;
+  border-radius: 10px;
+}
+
+#pic, #picture {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin: 1rem 0;
+}
+
+#pic {
+  border: 6px solid #BACE1B;
+}
+
+/* 8. Lists */
+ul, ol {
+  margin: 1rem 0 1.5rem 2rem;
+  font-size: 1rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+.resources {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 60%;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.resources li {
+  margin-bottom: 0.5rem;
+}
+
+.resources a {
+  color: #0b77dc;
+  text-decoration: underline;
+}
+
+.resources a:hover {
+  color: #333;
+}
+
+/* 9. Highlighted section (e.g. for video) */
+.highlight {
+  background-color: #f4f4a6;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #333;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+/* 10. Footer */
+footer {
+  background-color: #1bbcce;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin-top: 40px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+footer blockquote {
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* 11. Responsive adjustments */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+  #onepic, #pic, #picture {
+    width: 95vw;
+    max-width: 100%;
+    height: auto;
+  }
+  .resources {
+    width: 98%;
+    padding: 0.5rem;
+  }
+}
