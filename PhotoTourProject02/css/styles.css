@@ -142,3 +142,22 @@ body {
     margin-right: auto;
   }
 }
+
+.list {
+ list-style: none;
+}
+
+.list a {
+  color: #4d4413;
+  text-decoration: none;
+}
+
+.list li {background-image: url('fort.png'); 
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  padding-left: 24px;
+  line-height: 1.4;
+  margin-bottom: 8px; 
+  text-align: left;
+}
+
