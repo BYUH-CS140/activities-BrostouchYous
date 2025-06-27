@@ -1,12 +1,13 @@
 // Highlight the active nav link based on current URL
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".navbar a");
-  const currentPath = window.location.pathname.split("/").pop();
+  const currentURL = window.location.href;
 
   navLinks.forEach(link => {
-    const href = link.getAttribute("href");
-    // Adjust this logic based on your href structure, here assuming relative paths
-    if (href === currentPath || (href === "" && currentPath === "index.html")) {
+    const href = link.href;
+
+    // Highlight link if the href matches the current URL
+    if (currentURL === href || currentURL.endsWith(href)) {
       link.classList.add("active-link");
     }
   });
@@ -35,5 +36,4 @@ if (feedbackForm) {
       return false;
     }
   });
-}
-
+};
