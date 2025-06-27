@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedback - Stress-Less Sanctuary</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+     <h1 class="head">Stress-Less Sanctuary</h1>
+
+    <nav class="navbar">
+        
+            <a href="">Home</a>
+            <a href="">Sleep</a>
+            <a href="">Mindfulness</a>
+            <a href="">Calm</a>
+            <a href="">About</a>
+            <a href="">Feedback</a>
+        </ul>
+    </nav>
+
+    <h1 class="header">Feedback</h1>
+
+    <main class="fhome-main">
+
+        <section class="fhome-sec">
+            <h2>We’d love to hear from you!</h2>
+            <p>Please share your thoughts, suggestions, or questions below.</p>
+
+            <form action="#" method="POST" class="feedback-form">
+
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" placeholder="Your name" required /><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" placeholder="Your email" required /><br />
+
+                <label for="rating">Rating:</label><br />
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Okay</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Very Poor</option>
+                </select><br />
+
+                <label for="comments">Comments:</label><br />
+                <textarea id="comments" name="comments" rows="5" placeholder="Your feedback here..." required></textarea><br />
+
+                <button type="submit" class="button">Submit Feedback</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brostouch Yous. All rights reserved.</p>
+    </footer>
+<script src="java/scripts.js"></script>
+</body>
+</html>
